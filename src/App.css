@@ -2,6 +2,84 @@
   text-align: center;
 }
 
+.button {
+    margin: 40px;
+    padding: 10px 20px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 4px;
+    font-size: 18px;
+    border: none;
+}
+
+.frogButton {
+    background-color: darkgreen;
+}
+
+.dannyButton {
+    background-color: darkred;
+}
+
+.button:hover {
+    transform: rotate(10deg);
+}
+
+.button:focus {
+    outline: none;
+}
+
+.buttonContainer {
+    width: 100%;
+}
+
+
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
+.container {
+    margin-top: 40px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.title {
+	width: 80%;
+	box-sizing: border-box;
+	border: 5px white solid;
+    font-size: 80px;
+    color: white;
+    background-color: rgba(0,0,0,0.3);
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+}
+
+.gma {
+    min-width: 40%;
+}
+
+.dannyVid {
+    min-height: 400px;
+    min-width: 600px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
